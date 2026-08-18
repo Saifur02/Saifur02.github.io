@@ -13,4 +13,10 @@ export const profile: Profile = {
   linkedinLabel: 'linkedin.com/in/saifur',
   linkedinHref: 'https://www.linkedin.com/in/saifur',
   cvFile: 'CV_of_Md_Saifur_Rahman.pdf',
+  portrait: {
+    file: 'portrait.jpg',
+    width: 1000,
+    height: 1000,
+    alt: 'Md. Saifur Rahman, wearing a dark three-piece suit, photographed against a black background.',
+  },
 }

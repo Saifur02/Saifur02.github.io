@@ -44,6 +44,8 @@ export interface Profile {
   linkedinHref: string
   /** File name inside `public/`; resolved through `lib/asset.ts`. */
   cvFile: string
+  /** Portrait in `public/`, with its intrinsic size so the layout never shifts. */
+  portrait: { file: string; width: number; height: number; alt: string }
 }
 
 export interface Experience {

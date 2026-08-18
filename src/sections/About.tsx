@@ -6,6 +6,7 @@ import { Section } from '../components/ui/Section'
 import { SectionHeader } from '../components/ui/SectionHeader'
 import { Reveal } from '../components/ui/Reveal'
 import { ExternalLink } from '../components/ui/ExternalLink'
+import { asset } from '../lib/asset'
 
 const current = experience[0]
 const degree = education[education.length - 1]
@@ -30,8 +31,9 @@ export function About() {
       />
 
       <div className="grid gap-12 lg:grid-cols-[1.55fr_1fr] lg:gap-16">
-        {/* Editorial column */}
-        <Reveal>
+        {/* Editorial column. On narrow screens it follows the portrait rail, so a
+            visitor sees the face and the contact details before the long read. */}
+        <Reveal className="order-2 lg:order-1">
           <div className="relative">
             {/* Circuit-trace rule in place of a plain divider */}
             <svg
@@ -76,13 +78,35 @@ export function About() {
         </Reveal>
 
         {/* Identity rail */}
-        <Reveal delay={0.1}>
+        <Reveal delay={0.1} className="order-1 lg:order-2">
           <div className="panel relative overflow-hidden p-6 sm:p-7">
             <div
               aria-hidden="true"
               className="blueprint pointer-events-none absolute inset-0 opacity-40"
             />
             <div className="relative">
+              {/* The portrait's own background is near-black, so a bottom fade lets
+                  it sit inside the panel instead of on top of it. */}
+              <figure className="relative -mx-6 -mt-6 mb-6 sm:-mx-7 sm:-mt-7">
+                <img
+                  src={asset(profile.portrait.file)}
+                  alt={profile.portrait.alt}
+                  width={profile.portrait.width}
+                  height={profile.portrait.height}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[4/5] w-full object-cover object-[53%_12%]"
+                />
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-0 bg-linear-to-t from-surface via-surface/25 to-transparent"
+                />
+                <span
+                  aria-hidden="true"
+                  className="pointer-events-none absolute inset-x-0 bottom-0 h-px bg-linear-to-r from-transparent via-accent/50 to-transparent"
+                />
+              </figure>
+
               <p className="eyebrow">Identity</p>
               <p className="mt-3 text-xl font-semibold tracking-tight text-ink">{profile.name}</p>
               <p className="mt-1 text-sm text-muted">{profile.roles.join(' · ')}</p>

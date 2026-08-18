@@ -44,14 +44,25 @@ export function Hero() {
             Semiconductor Research Portfolio
           </motion.p>
 
-          {/* Name sits above the headline so a visitor knows whose site this is
-              before reading anything else. The headline stays the larger element. */}
-          <motion.p
-            variants={item}
-            className="mt-5 font-display text-[clamp(1.4rem,2.6vw,1.9rem)] leading-tight text-ink"
-          >
-            {profile.name}
-          </motion.p>
+          {/* Name and face sit above the headline so a visitor knows whose site
+              this is before reading anything else. The headline stays the larger
+              element, and the portrait stays small so it does not compete with the
+              device figure. */}
+          <motion.div variants={item} className="mt-5 flex items-center gap-3.5">
+            {/* The source is a full-length portrait, so the avatar zooms to the
+                head: at 48px an uncropped frame renders the face a few pixels
+                tall. Background sizing pans deterministically where object-fit
+                cannot, since the source is already square. Decorative — the name
+                sits next to it, and About carries the described portrait. */}
+            <span
+              aria-hidden="true"
+              style={{ backgroundImage: `url(${asset(profile.portrait.file)})` }}
+              className="block size-12 shrink-0 rounded-full border border-line bg-surface bg-[length:340%] bg-[position:47%_18%] bg-no-repeat"
+            />
+            <p className="font-display text-[clamp(1.4rem,2.6vw,1.9rem)] leading-tight text-ink">
+              {profile.name}
+            </p>
+          </motion.div>
 
           <motion.h1
             variants={item}
