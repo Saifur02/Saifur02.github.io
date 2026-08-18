@@ -32,6 +32,6 @@ export const education: Education[] = [
     grade: '3.84/4.0',
     gradeValue: 3.84,
     gradeMax: 4.0,
-    rank: '18th out of 117',
+    rank: '17th out of 117',
   },
 ]
