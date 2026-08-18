@@ -39,7 +39,7 @@ export function Publications() {
         index="04"
         headingId="publications-heading"
         title="Publications"
-        lede="Peer-reviewed work, cited exactly as it appears in the record."
+        lede="Peer-reviewed work in a data journal and an international conference proceedings."
       />
 
       <RevealGroup as="ol" className="divide-y divide-line" step={0.12}>

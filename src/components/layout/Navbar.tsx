@@ -41,7 +41,7 @@ export function Navbar({ active, onOpenMenu }: NavbarProps) {
           >
             SR
           </span>
-          <span className="hidden text-sm font-medium tracking-tight text-ink sm:block">
+          <span className="text-[0.8rem] font-medium tracking-tight text-ink sm:text-sm">
             Md. Saifur Rahman
           </span>
         </a>

@@ -44,10 +44,19 @@ export function Hero() {
             Semiconductor Research Portfolio
           </motion.p>
 
+          {/* Name sits above the headline so a visitor knows whose site this is
+              before reading anything else. The headline stays the larger element. */}
+          <motion.p
+            variants={item}
+            className="mt-5 font-display text-[clamp(1.4rem,2.6vw,1.9rem)] leading-tight text-ink"
+          >
+            {profile.name}
+          </motion.p>
+
           <motion.h1
             variants={item}
             id="hero-heading"
-            className="mt-6 text-[clamp(2.3rem,6.1vw,3.9rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink"
+            className="mt-3 text-[clamp(2.3rem,6.1vw,3.9rem)] leading-[1.05] font-semibold tracking-[-0.02em] text-ink"
           >
             Engineering the Future{' '}
             <span className="block">

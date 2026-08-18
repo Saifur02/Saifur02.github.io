@@ -20,7 +20,7 @@ export function Referees() {
         index="12"
         headingId="referees-heading"
         title="Academic referees"
-        lede="Available for reference on request, as listed on the curriculum vitae."
+        lede="Three faculty members available for reference on request."
       />
 
       <RevealGroup as="ul" className="grid gap-px overflow-hidden rounded-xl border border-line bg-line md:grid-cols-3" step={0.1}>

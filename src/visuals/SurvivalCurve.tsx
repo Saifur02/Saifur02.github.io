@@ -135,7 +135,7 @@ export function SurvivalCurve() {
         </span>
       </div>
       <p className="mt-2 font-mono text-[0.62rem] leading-relaxed text-muted">
-        Illustration of the method. No estimates from the study are reproduced.
+        Schematic survival function with censoring marks.
       </p>
     </div>
   )

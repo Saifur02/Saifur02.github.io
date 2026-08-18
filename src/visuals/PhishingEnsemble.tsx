@@ -62,7 +62,7 @@ export function PhishingEnsemble() {
       </div>
 
       <p className="mt-4 font-mono text-[0.62rem] leading-relaxed text-muted">
-        Three classifiers, one majority vote — the ensemble described in the project.
+        Three classifiers combined into a single majority vote.
       </p>
     </div>
   )

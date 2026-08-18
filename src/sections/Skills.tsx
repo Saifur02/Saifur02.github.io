@@ -27,7 +27,7 @@ export function Skills() {
         index="08"
         headingId="skills-heading"
         title="Technical ecosystem"
-        lede="Every language, library and tool from the CV, grouped exactly as the CV groups them. Each die on the wafer is one tool."
+        lede="Languages, analysis libraries, and the design and simulation toolchain. Each die on the wafer is one tool."
       />
 
       <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] lg:gap-16">

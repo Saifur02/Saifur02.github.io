@@ -183,8 +183,7 @@ export function LoadCurve() {
       </div>
 
       <p className="mt-3 font-mono text-[0.65rem] leading-relaxed text-muted">
-        Illustrative profile drawn to explain the method. It is not measured data and reports no
-        result.
+        Schematic daily profile — shows how load shifting flattens an evening peak.
       </p>
     </div>
   )

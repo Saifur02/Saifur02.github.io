@@ -118,8 +118,7 @@ export function GaafetCompare() {
       </div>
 
       <p className="mt-4 font-mono text-[0.65rem] leading-relaxed text-muted">
-        Schematic comparison. Direction of improvement as reported in the study; no numerical
-        results are shown.
+        Schematic — direction of improvement only.
       </p>
     </div>
   )

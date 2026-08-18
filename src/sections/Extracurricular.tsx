@@ -130,7 +130,7 @@ export function Extracurricular() {
         index="11"
         headingId="extracurricular-heading"
         title="Beyond the lab"
-        lede="Sport, service, robotics and hardware contests — the parts of the CV that are not about grades."
+        lede="Sport, service, robotics and hardware contests — leadership earned outside the classroom."
       />
 
       <RevealGroup as="ul" className="grid items-start gap-5 md:grid-cols-5" step={0.1}>

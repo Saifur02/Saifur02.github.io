@@ -26,7 +26,7 @@ export function About() {
         index="02"
         headingId="about-heading"
         title="A researcher’s profile"
-        lede="The introduction from the curriculum vitae, unedited."
+        lede="An engineer working on ultra-scaled devices, and where he intends to take that work."
       />
 
       <div className="grid gap-12 lg:grid-cols-[1.55fr_1fr] lg:gap-16">

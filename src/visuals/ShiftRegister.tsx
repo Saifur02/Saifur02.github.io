@@ -76,9 +76,9 @@ export function ShiftRegister() {
         />
       </svg>
 
-      <p className="mt-2 font-mono text-[0.62rem] text-muted">
-        Topology demonstration — transmission gate, pass transistor and NAND implementations were
-        compared in the project.
+      <p className="mt-2 font-mono text-[0.62rem] leading-relaxed text-muted">
+        Serial input clocked through four stages — the topology built with transmission gate, pass
+        transistor and NAND implementations.
       </p>
     </div>
   )
