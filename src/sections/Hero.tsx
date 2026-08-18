@@ -49,15 +49,17 @@ export function Hero() {
               element, and the portrait stays small so it does not compete with the
               device figure. */}
           <motion.div variants={item} className="mt-5 flex items-center gap-3.5">
-            {/* The source is a full-length portrait, so the avatar zooms to the
-                head: at 48px an uncropped frame renders the face a few pixels
-                tall. Background sizing pans deterministically where object-fit
-                cannot, since the source is already square. Decorative — the name
-                sits next to it, and About carries the described portrait. */}
-            <span
+            {/* Pre-cropped head-and-shoulders file at 4x its rendered size, so the
+                browser scales it barely at all. Decorative: the name sits beside
+                it and About carries the described portrait. */}
+            <img
+              src={asset(profile.avatar.file)}
+              alt=""
               aria-hidden="true"
-              style={{ backgroundImage: `url(${asset(profile.portrait.file)})` }}
-              className="block size-12 shrink-0 rounded-full border border-line bg-surface bg-[length:340%] bg-[position:47%_18%] bg-no-repeat"
+              width={profile.avatar.width}
+              height={profile.avatar.height}
+              decoding="async"
+              className="size-12 shrink-0 rounded-full border border-line bg-surface object-cover"
             />
             <p className="font-display text-[clamp(1.4rem,2.6vw,1.9rem)] leading-tight text-ink">
               {profile.name}

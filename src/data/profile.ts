@@ -19,4 +19,5 @@ export const profile: Profile = {
     height: 1000,
     alt: 'Md. Saifur Rahman, wearing a dark three-piece suit, photographed against a black background.',
   },
+  avatar: { file: 'avatar.jpg', width: 192, height: 192 },
 }

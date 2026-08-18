@@ -46,6 +46,12 @@ export interface Profile {
   cvFile: string
   /** Portrait in `public/`, with its intrinsic size so the layout never shifts. */
   portrait: { file: string; width: number; height: number; alt: string }
+  /**
+   * Head-and-shoulders crop of the portrait, pre-cut at 4x its 48px display size.
+   * A separate file rather than a CSS zoom: scaling the full portrait down to
+   * avatar size in one step renders it soft.
+   */
+  avatar: { file: string; width: number; height: number }
 }
 
 export interface Experience {
