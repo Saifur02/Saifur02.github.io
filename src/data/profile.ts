@@ -11,7 +11,7 @@ export const profile: Profile = {
   phoneHref: 'tel:+8801897977985',
   email: 'saifurrahman02041@gmail.com',
   linkedinLabel: 'linkedin.com/in/saifur',
-  linkedinHref: 'https://www.linkedin.com/in/saifur',
+  linkedinHref: 'https://www.linkedin.com/in/saifur02/',
   cvFile: 'CV_of_Md_Saifur_Rahman.pdf',
   portrait: {
     file: 'portrait.jpg',
